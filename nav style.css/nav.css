@@ -2,8 +2,10 @@
      display: flex;
      list-style: none;
      margin-right: 40px;
-     padding: 15px;
-     gap: 30px;
+     padding: 15px 0px ;
+     gap: 10px;
+     justify-content: space-around;
+     align-items: center;
  }
 
  nav ul li a {
@@ -17,13 +19,15 @@
      border-radius: 30px;
      backdrop-filter: blur(10px);
      font-size: 16px;
+     align-items: center;
  }
 
  nav ul li a:hover {
-     background: rgba(134, 202, 247, 0.795);
+     background: rgb(10, 10, 10);
      border: 1px solid rgba(255, 255, 255, 0.5);
      transform: translateY(-3px);
      transition: all 0.3s ease;
+     align-items: center;
  }
 
  button {
@@ -33,7 +37,8 @@
      border-radius: 5px;
      background: rgba(255, 255, 255, 0.15);
      backdrop-filter: blur(8px);
-     color: rgb(8, 8, 8);
+     color: rgb(250, 247, 247);
+     font-family: monospace;
  }
 
  button:hover {
