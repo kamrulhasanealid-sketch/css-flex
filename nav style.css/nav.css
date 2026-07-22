@@ -1,69 +1,140 @@
  nav ul {
+     display: flex;
+     list-style: none;
+     margin-right: 40px;
+     padding: 15px;
+     gap: 30px;
+ }
+
+ nav ul li a {
+     text-decoration: none;
+     color: #fdfcfc;
+     font-family: "Bebas Neue Regular", sans-serif;
+     font-weight: bold;
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     padding: 12px 28px;
+     background: rgba(255, 255, 255, 0.15);
+     border-radius: 30px;
+     backdrop-filter: blur(10px);
+     font-size: 16px;
+ }
+
+ nav ul li a:hover {
+     background: rgba(134, 202, 247, 0.795);
+     border: 1px solid rgba(255, 255, 255, 0.5);
+     transform: translateY(-3px);
+     transition: all 0.3s ease;
+ }
+
+ button {
+     padding: 4px 30px;
+     font-size: 10px;
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     border-radius: 5px;
+     background: rgba(255, 255, 255, 0.15);
+     backdrop-filter: blur(8px);
+     color: rgb(8, 8, 8);
+ }
+
+ button:hover {
+     background: rgba(53, 241, 116, 0.877);
+     border: 1px solid rgba(255, 255, 255, 0.5);
+     text-shadow: 0px 0px 5px rgb(255, 255, 255);
+ }
+
+ @font-face {
+     font-family: "Sans Serif";
+     src: url("../fonts/sans-serif/Sans-serif.ttf") format("truetype");
+ }
+
+ h1 {
+     font-family: "Sans Serif";
+     color: #fdfcfc;
+     font-size: 120px;
+ }
+
+ body {
+     background: linear-gradient(135deg, #4facfe, #00f2fe);
+     background-image: url('../image/hills-photo.jpg');
+     background-size: cover;
+ }
+
+ .container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 500px;
+     border: 2px solid rgba(255, 255, 255, 0.3);
+     margin: 20px;
+ }
+
+ .container p {
+     font-family: "Sans Serif";
+     color: #fdfcfc;
+     font-size: 20px;
+     text-align: center;
+     margin: 0 20px;
+     gap: 20px;
+ }
+
+ article {
+     width: 800px;
+     min-height: 100px;
+     margin: 30px auto;
+     padding: 20px;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     /* Glass Effect */
+     background: rgba(255, 255, 255, 0.12);
+     backdrop-filter: blur(15px);
+     -webkit-backdrop-filter: blur(15px);
+
+     border: 1px solid rgba(255, 255, 255, 0.25);
+     border-radius: 18px;
+
+     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+     background: rgba(255, 255, 255, 0.08);
+     backdrop-filter: blur(10px);
+     -webkit-backdrop-filter: blur(10px);
+
+     border: 1px solid rgba(255, 255, 255, 0.2);
+     border-radius: 12px;
+
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+     .card {
+         transition: all 0.3s ease;
+     }
+
+     .card:hover {
+         transform: translateY(-8px);
+         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+     }
+ }
+ .glass-title{
+    margin: 0;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+ }
+ .hero-text{
     display: flex;
-    list-style: none;
-    margin-right: 40px;
-    padding: 15px;
-    gap: 30px;
-}
-nav ul li a {
-    text-decoration: none;
-    color: #fdfcfc;
-    font-family: "Bebas Neue Regular", sans-serif;
-    font-weight: bold;
-    border:  1px solid rgba(255,255,255,0.3); 
-    padding: 12px 28px;
-    background:rgba( 255,255,255,0.15);
-    border-radius: 30px;
-    backdrop-filter: blur(10px);
-    font-size: 16px;
-}
-nav ul li a:hover {
-    background: rgba(134, 202, 247, 0.795);
-    border:  1px solid rgba(255,255,255,0.5); 
-    transform: translateY(-3px);
-    transition: all 0.3s ease;
-}
-button {
-    padding: 1px 20px;
-    font-size: 10px;
-    border: 1px solid rgba(255,255,255,0.3);
-    border-radius: 5px;
-    background: rgba( 255,255,255,0.15);
-    backdrop-filter: blur(8px);
-    color: rgb(8, 8, 8);
-}
-button:hover {
-    background: rgba(53, 241, 116, 0.877);
-    border:  1px solid rgba(255,255,255,0.5); 
-    text-shadow: 0px 0px 5px rgb(255, 255, 255);
-}
-@font-face {
-    font-family: "Sans Serif";
-    src: url("../fonts/sans-serif/Sans-serif.ttf") format("truetype");
-}
-h1 {
-    font-family: "Sans Serif";
-    color: #fdfcfc;
-    font-size: 120px;
-}
-body {
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
-  background-image: url('/image/hills-photo.jpg');
-  background-size: cover;
-}
-.container {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    border: 2px solid rgba(255,255,255,0.3);
-    margin: 20px;
-}
-.container p {
-    font-family: "Sans Serif";
-    color: #fdfcfc;
-    font-size: 20px;
+    height: 100vh;
     text-align: center;
-    margin: 0 20px;
+}
+.glass{
+    width: 450px;
+    padding: 30px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
